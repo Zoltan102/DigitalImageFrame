@@ -1,3 +1,5 @@
+import '../node_modules/bootstrap/dist/css/bootstrap-grid.css'
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
 import './style.css';
 
 
@@ -13,8 +15,16 @@ function changeBorderWidth(){
 function changeBorderColour(){
     document.getElementById("img").style.borderColor = document.getElementById("colour").value;
 }
+function darkMode(){
+    if(document.getElementById("body").hasAttribute("class")){
+        document.getElementById("body").removeAttribute("class");
+    }else{
+        document.getElementById("body").setAttribute("class", "dark-mode");
+    }
+}
 
 document.getElementById("url").addEventListener('change', getImg);
 document.getElementById("width").addEventListener('input', changeImgWidth);
 document.getElementById("border").addEventListener('input', changeBorderWidth);
 document.getElementById("colour").addEventListener('input', changeBorderColour);
+document.getElementById("dark-mode-button").addEventListener('click', darkMode);

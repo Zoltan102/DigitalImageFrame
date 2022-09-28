@@ -1,3 +1,7 @@
 #img{
     border-style: solid;
 }
+.dark-mode{
+    background-color: #262626;
+    color: green;
+}

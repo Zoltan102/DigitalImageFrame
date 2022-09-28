@@ -7,14 +7,33 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
-<body>
-    
-    <input type="text" id="url" placeholder="Adja meg a kép linkjét!">
-    <input type="number" id="width" placeholder="Adja meg a kép szélességét pixelben!">
-    <input type="number" id="border" placeholder="Adja meg a keret vastagságát!">
-    <input type="color" id="colour">
-    <img src="" id="img">
-
+<body id="body">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"><label for="url">Kép url:</label></div>
+            <div class="col-md-6"><input type="text" id="url" placeholder="Adja meg a kép linkjét!"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"><label for="width">Szélesség:</label></div>
+            <div class="col-md-6"><input type="number" id="width" placeholder="Adja meg a kép szélességét pixelben!"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"><label for="border">Keret vastagság:</label></div>
+            <div class="col-md-6"><input type="number" id="border" placeholder="Adja meg a keret vastagságát!"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"><label for="colour">Szín:</label></div>
+            <div class="col-md-6"><input type="color" id="colour"></div>
+        </div>
+        <div class="row">
+            <img src="" id="img">
+        </div>
+    </div>
+    <footer>
+        <p>Süveges Zoltán</p>
+        <p>14T</p>
+        <button id="dark-mode-button">Dark mode switch</button>
+    </footer>
     <script src='main.js'></script>
 </body>
 </html>
