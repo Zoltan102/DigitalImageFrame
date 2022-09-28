@@ -1,0 +1,1 @@
+(()=>{"use strict";document.getElementById("border").addEventListener("change",(function(){document.getElementById("img").style.borderWidth=document.getElementById("width").value}))})();
